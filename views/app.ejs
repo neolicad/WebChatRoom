@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FSE Chat Room</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div class="main">
+        <ul id="messages"></ul>
+        <textarea id="m"></textarea>
+        <span class="btn">
+            <button>POST</button>
+        </span>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/jquery-3.1.0.min.js"></script>
+    <!-- <script  src="https://code.jquery.com/jquery-3.1.0.min.js"></script> -->
+    <script src="/javascripts/sock.js"></script>
+    <script>
+        var socket = new Sock('<%= uID %>');
+        socket.setSubmitAction();
+        socket.setReceiveAction();
+        //console.log(socket.uID);
+    </script>
+</body>
+</html>
+

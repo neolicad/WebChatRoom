@@ -1,0 +1,27 @@
+{
+  "name": "webchatroom",
+  "version": "1.0.0",
+  "description": "a simple web chat room application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neolicd/WebChatRoom.git"
+  },
+  "author": "neolicd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neolicd/WebChatRoom/issues"
+  },
+  "homepage": "https://github.com/neolicd/WebChatRoom#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "nedb": "^1.8.0",
+    "socket.io": "^1.4.8"
+  }
+}
